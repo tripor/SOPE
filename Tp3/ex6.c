@@ -3,6 +3,9 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <sys/wait.h>
+#include <string.h>
+#include <stdio.h>
 int main(void)
 {
  pid_t pid;
@@ -21,10 +24,10 @@ int main(void)
      exit(0); // a eliminar na alinea c)
    }
    else // simulando o trabalho do pai
-   for (j=1; j<=10; j++) {
-     sleep(1);
-     printf("father working ...\n");
+   {
+     //wait(NULL);
    }
   }
+  printf("Pai acabou\n");
   exit(0);
 }

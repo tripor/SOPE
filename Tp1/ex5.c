@@ -10,16 +10,17 @@ int main(int argc, char* argv[], char* envp[])
   char* var;
   if(argc==1)
   {
-    /*while(envp[i]!=NULL)
+    while(envp[i]!=NULL)
     {
-      if(strncmp(envp[i],"USER=",5)==0)
+      //printf("%s\n",envp[i]);
+      /*if(strncmp(envp[i],"USER=",5)==0)
       {
         printf("Hello %s!\n",envp[i]+5);
         break;
-      }
+      }*/
       i++;
-    }*/
-    var=getenv("USER_NAME");
+    }
+    var=getenv("PATH");
     if(var!=NULL)
     {
       printf("Hello %s!\n",var);
