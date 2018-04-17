@@ -37,6 +37,7 @@ int main(int argc, char const *argv[]) {
     tamanho=quantidade;
     separar(ler,meu);
     tamanho=quantidade-tamanho;
+    
 
 
   } while(strcmp(ler,"quit")!=0);
