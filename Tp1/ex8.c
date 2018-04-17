@@ -17,7 +17,7 @@ int main(int argc, char* argv[])
     printf("Random number: %d, iteração: %d\n",random_number,i);
     i++;
   }
-  //sysconf (_SC_CLK_TCK);
+  sysconf (_SC_CLK_TCK);
   times(&tempos);
   printf("Tempo gasto no processo: %ld\nTempo gasto sistema: %ld\n",tempos.tms_utime, tempos.tms_stime);
   exit(0);
